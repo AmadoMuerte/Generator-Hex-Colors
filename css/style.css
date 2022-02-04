@@ -1,0 +1,69 @@
+*{padding:0;margin:0;border:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}nav,footer,header,aside{display:block}html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}input,button,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.text {
+    font-family: 'Caveat', cursive;
+    margin-bottom: 20px;
+    font-size: 55px;
+    text-shadow: 1px 1px 3px rgb(22, 22, 22);
+    animation-duration: 7s;
+    animation-name: colors;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes colors {
+    from {
+        
+        color:rgb(103, 189, 211);
+    }
+    40%{
+        padding-left: 50px;
+        color:rgb(150, 103, 211);
+    }
+    80%{
+        padding-right: 50px;
+        color:rgb(230, 118, 215);
+    }
+    to {
+        padding-right: 0px;
+        padding-left: 0px;
+        color:rgb(103, 189, 211);
+    }
+}
+.hex-color {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgb(160, 153, 153);
+}
+.hex-code {
+    font-weight: 700;
+}
+.buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: rgb(25, 152, 184);
+    color: White;
+    border: 1px 1px black;
+    border-radius: 7px;
+    box-shadow: 2px 2px rgb(65, 63, 63);
+    
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: rgb(94, 148, 163);
+}
+.button:active{
+    transition: 0.2s;
+    box-shadow: 0px 0px rgb(27, 26, 26);
+    
+}
